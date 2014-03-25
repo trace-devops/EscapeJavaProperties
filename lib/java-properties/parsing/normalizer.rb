@@ -47,9 +47,6 @@ module JavaProperties
       
       # Removes leading whitepsace
       RULES << Rule.new(/^\s+/)
-      
-      # Removes tailing whitepsace
-      RULES << Rule.new(/\s+$/)
 
       # Strings ending with \ are concatenated
       RULES << Rule.new(/\\\s*$[\n\r]+/)
