@@ -1,4 +1,3 @@
-require 'stringio'
 require 'java-properties/version'
 require 'java-properties/properties'
 require 'java-properties/encoding'
