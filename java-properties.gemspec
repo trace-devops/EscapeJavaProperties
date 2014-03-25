@@ -23,12 +23,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'yard'
   spec.add_development_dependency 'inch'
-
-
-group :test do
-  gem 'minitest'
-  gem 'simplecov', :require => false
-  gem 'coveralls', :require => false
-end
-
 end
