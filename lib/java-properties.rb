@@ -27,13 +27,11 @@ module JavaProperties
   # Loads and parses a Java properties file
   # @see Parsing::Parser
   # @param path [String]
+  # @param encoding [String]
+  # @param allow_invalid_byte_sequence [Boolean]
   # @return [Properties]
-  def self.load(path, allow_invalid_byte_sequence = true)
-    if allow_invalid_byte_sequence
-      parse(File.read(path).encode('UTF-8', 'binary', invalid: :replace, undef: :replace))
-    else
-      parse(File.read(path))
-    end
+  def self.load(path, encoding = 'UTF-8', allow_invalid_byte_sequence = true)
+      parse(File.read(path).encode(encoding, 'binary', allow_invalid_byte_sequence ? {invalid: :replace, undef: :replace} : {} ))
   end
 
   # Generates a Java properties file

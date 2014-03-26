@@ -1,4 +1,5 @@
 require 'helper'
+require 'tempfile'
 
 describe JavaProperties do
   subject{ JavaProperties }

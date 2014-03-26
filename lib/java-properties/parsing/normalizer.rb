@@ -48,8 +48,14 @@ module JavaProperties
       # Removes leading whitepsace
       RULES << Rule.new(/^\s+/)
 
-      # Strings ending with \ are concatenated
-      RULES << Rule.new(/\\\s*$[\n\r]+/)
+      # Removes tailing line separators
+      RULES << Rule.new(/\r\n?|\n$/)
+
+      # Unescape double \
+      RULES << Rule.new(/\\\\/, '\\')
+
+      # Strings ending with \ are concatenated (only if the number is odd)
+      RULES << Rule.new(/\\$\s+/)
 
       # Remove whitespace around delimiters and replace with =
       RULES << Rule.new(/^((?:(?:\\[=: \t])|[^=: \t])+)[ \t]*[=: \t][ \t]*/, '\1=')
