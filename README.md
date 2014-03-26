@@ -7,20 +7,14 @@
 [![Gemnasium](http://img.shields.io/gemnasium/jnbt/java-properties.png)](https://gemnasium.com/jnbt/java-properties)
 [![Inline docs](http://inch-pages.github.io/github/jnbt/java-properties.png)](http://inch-pages.github.io/github/jnbt/java-properties)
 
-A ruby library to read and write [Java properties files](http://en.wikipedia.org/wiki/.properties), which format is better describe [in the Java documentation](http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.Reader)).
+A ruby library to read and write [Java properties files](http://en.wikipedia.org/wiki/.properties), which format is better describe [in the Java documentation](http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.Reader\)).
 
 ## Installation
 
-Install via Rubygems
+Install via Rubygems or Gemfile
 
-```bash
-$ gem install java-properties
-```
-
-... or add to your Gemfile
-
-```ruby
-gem "java-properties"
+```zsh
+$ gem install proper_properties
 ```
 
 ## Loading files
@@ -57,7 +51,7 @@ ProperProperties.generate(hash)  # => "foo=bar"
 
 ## Encodings and special chars
 
-As Java properties files normally hold UTF-8 chars in their escaped representation this tool tries to convert them:
+Although ISO 8859-1 is assumed for Java properties files, they normally use UTF-8 encoding. This tool tries to convert them:
 
 ```
 "ה" <=> "\u05d4"
@@ -72,7 +66,7 @@ ProperProperties.generate({"i : like=strange" => "bar"})
 
 ## Multi line and line breaks
 
-In Java properties files a string can be multi line but line breaks have to be escaped. 
+In Java properties files there is distinction between natural lines and logical lines (than may span several lines by escaping the line terminator characters). 
 
 Assume the following input:
 
@@ -91,7 +85,7 @@ In the opposite direction line breaks will be correctly escaped but the generato
 
 ## Contributing
 
-1. [Fork it!](https://github.com/jnbt/java-properties/fork)
+1. [Fork it!](https://github.com/tnarik/proper_properties/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -99,12 +93,13 @@ In the opposite direction line breaks will be correctly escaped but the generato
 
 ## Author
 
-Jonas Thiel (@jonasthiel)
+- Tnarik Innael (@tnarik)
+- Jonas Thiel (@jonasthiel) : [original project](https://github.com/jnbt/java-properties) from commit [1f2c4b008d69d0eae1084b1adfdea814e2b29899]
 
 ## References
 
-For more information about the properties file format have a look at the [Java Plattform documenation](http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html).
+For a proper description about the properties file format have a look at the [Java Plattform documentation](http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.Reader\)).
 
 ## License
 
-This gem is released under the MIT License. See the LICENSE file for further details.
+This gem is released under the MIT License. See the LICENSE.txt file for further details.
