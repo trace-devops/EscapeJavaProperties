@@ -7,7 +7,7 @@
 [![Gemnasium](http://img.shields.io/gemnasium/jnbt/java-properties.png)](https://gemnasium.com/jnbt/java-properties)
 [![Inline docs](http://inch-pages.github.io/github/jnbt/java-properties.png)](http://inch-pages.github.io/github/jnbt/java-properties)
 
-A ruby library to read and write [Java properties files](http://en.wikipedia.org/wiki/.properties).
+A ruby library to read and write [Java properties files](http://en.wikipedia.org/wiki/.properties), which format is better describe [in the Java documentation](http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.Reader)).
 
 ## Installation
 

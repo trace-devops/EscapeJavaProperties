@@ -1,9 +1,4 @@
 source 'https://rubygems.org'
 
-group :test do
-  gem 'minitest'
-  gem 'simplecov', :require => false
-  gem 'coveralls', :require => false
-end
-
+# Specify your gem's dependencies in proper_properties.gemspec
 gemspec
