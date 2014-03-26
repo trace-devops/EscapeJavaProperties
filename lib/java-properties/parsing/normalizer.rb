@@ -41,21 +41,21 @@ module JavaProperties
 
       # Collection of ordered rules
       RULES = []
-
-      # Removes comments
-      RULES << Rule.new(/^\s*[!\#].*$/)
-      
-      # Removes leading whitepsace
+       
+      # Removes leading whitespace
       RULES << Rule.new(/^\s+/)
 
-      # Removes tailing line separators
-      RULES << Rule.new(/\r\n?|\n$/)
-
-      # Unescape double \
-      RULES << Rule.new(/\\\\/, '\\')
-
       # Strings ending with \ are concatenated (only if the number is odd)
-      RULES << Rule.new(/\\$\s+/)
+      RULES << Rule.new(/^(.*[^\\]((\\){2})*)\\$\s+/, '\1')
+
+      # Removes comments (after the application of the logic line concatenation)
+      RULES << Rule.new(/^\s*[!\#].*$/)
+
+      # Removes empty lines
+      RULES << Rule.new(/^$(\r\n?|\n)/)
+
+      # Unescape double backslashes
+      RULES << Rule.new(/\\\\/, '\\')
 
       # Remove whitespace around delimiters and replace with =
       RULES << Rule.new(/^((?:(?:\\[=: \t])|[^=: \t])+)[ \t]*[=: \t][ \t]*/, '\1=')
