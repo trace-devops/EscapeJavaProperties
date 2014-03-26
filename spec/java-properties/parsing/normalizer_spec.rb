@@ -1,7 +1,7 @@
 require 'helper'
 
-describe JavaProperties::Parsing::Normalizer do
-  subject { JavaProperties::Parsing::Normalizer }
+describe ProperProperties::Parsing::Normalizer do
+  subject { ProperProperties::Parsing::Normalizer }
 
   it "normalizes by applying all rules" do
     content    = fixture("test.properties")

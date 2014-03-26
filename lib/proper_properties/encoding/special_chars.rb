@@ -1,7 +1,7 @@
-module JavaProperties
+module ProperProperties
   module Encoding
     # Module to escape and unescape special chars
-    # @see JavaProperties::Encoding
+    # @see ProperProperties::Encoding
     module SpecialChars
 
       # Lookup table for escaping special chars

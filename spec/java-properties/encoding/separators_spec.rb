@@ -1,7 +1,7 @@
 require 'helper'
 
-describe JavaProperties::Encoding::Separators do
-  subject{ JavaProperties::Encoding::Separators }
+describe ProperProperties::Encoding::Separators do
+  subject{ ProperProperties::Encoding::Separators }
   let(:raw)    { 'this is some = text : with special \\=separators' }
   let(:raw_normalizd) { 'this is some = text : with special =separators' }
   let(:encoded){ 'this\\ is\\ some\\ \\=\\ text\\ \\:\\ with\\ special\\ \\=separators' }

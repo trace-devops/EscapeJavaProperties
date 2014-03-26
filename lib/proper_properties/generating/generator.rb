@@ -1,4 +1,4 @@
-module JavaProperties
+module ProperProperties
   module Generating
     # This module allows generating the content of a properties file
     # base on a {Properties} object (or any other hash like structure)

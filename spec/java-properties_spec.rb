@@ -1,8 +1,8 @@
 require 'helper'
 require 'tempfile'
 
-describe JavaProperties do
-  subject{ JavaProperties }
+describe ProperProperties do
+  subject{ ProperProperties }
 
   it "parses from string" do
     subject.parse("item1=item1").must_equal({:item1 => "item1"})

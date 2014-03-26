@@ -1,7 +1,7 @@
 require 'helper'
 
-describe JavaProperties::Parsing::Parser do
-  subject { JavaProperties::Parsing::Parser }
+describe ProperProperties::Parsing::Parser do
+  subject { ProperProperties::Parsing::Parser }
 
   let(:as_hash) do
     {

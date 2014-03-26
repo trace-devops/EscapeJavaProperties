@@ -1,13 +1,13 @@
-require 'java-properties/version'
-require 'java-properties/properties'
-require 'java-properties/encoding'
-require 'java-properties/parsing'
-require 'java-properties/generating'
+require 'proper_properties/version'
+require 'proper_properties/properties'
+require 'proper_properties/encoding'
+require 'proper_properties/parsing'
+require 'proper_properties/generating'
 
-# A module to read and write Java properties files
-module JavaProperties
+# A module to read and write Proper properties files
+module ProperProperties
 
-  # Parses the content of a Java properties file
+  # Parses the content of a Proper properties file
   # @see Parsing::Parser
   # @param text [String]
   # @return [Properties]
@@ -15,7 +15,7 @@ module JavaProperties
     Parsing::Parser.parse(text)
   end
 
-  # Generates the content of a Java properties file
+  # Generates the content of a Proper properties file
   # @see Generating::Generator
   # @param hash [Hash] 
   # @param options [Hash] options for the generator
@@ -24,7 +24,7 @@ module JavaProperties
     Generating::Generator.generate(hash, options)
   end
 
-  # Loads and parses a Java properties file
+  # Loads and parses a Proper properties file
   # @see Parsing::Parser
   # @param path [String]
   # @param encoding [String]
@@ -34,7 +34,7 @@ module JavaProperties
       parse(File.read(path).encode(encoding, 'binary', allow_invalid_byte_sequence ? {invalid: :replace, undef: :replace} : {} ))
   end
 
-  # Generates a Java properties file
+  # Generates a Proper properties file
   # @see Generating::Generator
   # @param hash [Hash]
   # @param path [String]

@@ -1,4 +1,4 @@
-# JavaProperties
+# ProperProperties
 
 [![Build Status](http://img.shields.io/travis/jnbt/java-properties.png)](https://travis-ci.org/jnbt/jnbt/java-properties)
 [![Code Climate](http://img.shields.io/codeclimate/github/jnbt/java-properties.png)](https://codeclimate.com/github/jnbt/java-properties)
@@ -28,14 +28,14 @@ gem "java-properties"
 You can load a valid Java properties file from the file system using a path:
 
 ```ruby
-properties = JavaProperties.load("path/to/my.properties")
+properties = ProperProperties.load("path/to/my.properties")
 properties[:foo] # => "bar"
 ```
 
 If have already the content of the properties file at hand than parse the content as:
 
 ```ruby
-properties = JavaProperties.load("foo=bar")
+properties = ProperProperties.load("foo=bar")
 properties[:foo] # => "bar"
 ```
 
@@ -45,14 +45,14 @@ You can write any Hash-like structure as a properties file:
 
 ```ruby
 hash = {:foo => "bar"}
-JavaProperties.write(hash, "path/to/my.properties")
+ProperProperties.write(hash, "path/to/my.properties")
 ```
 
 Or if you want to omit the file you can receive the content directly:
 
 ```ruby
 hash = {:foo => "bar"}
-JavaProperties.generate(hash)  # => "foo=bar"
+ProperProperties.generate(hash)  # => "foo=bar"
 ```
 
 ## Encodings and special chars
@@ -66,7 +66,7 @@ As Java properties files normally hold UTF-8 chars in their escaped representati
 The tool also escaped every '=', ' ' and ':' in the name part of a property line:
 
 ```ruby
-JavaProperties.generate({"i : like=strange" => "bar"}) 
+ProperProperties.generate({"i : like=strange" => "bar"}) 
 # => "i\ \:\ like\=strange=bar"
 ```
 
