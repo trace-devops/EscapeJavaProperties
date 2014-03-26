@@ -19,9 +19,7 @@ Gem::Specification.new do |spec|
 
   # development dependencies  
   spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'yard'
-  spec.add_development_dependency 'inch'
-
   spec.add_development_dependency 'coveralls'
   spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'minitest'
 end
