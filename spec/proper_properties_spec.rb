@@ -33,7 +33,7 @@ describe ProperProperties do
   private
 
   def with_temp_file(&block)
-    file = Tempfile.new("java-properties")
+    file = Tempfile.new("proper_properties")
     block.call(file)
   ensure
     file.close

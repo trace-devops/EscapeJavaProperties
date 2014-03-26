@@ -10,7 +10,7 @@ SimpleCov.start
 Coveralls.wear!
 
 require 'minitest/autorun'
-require 'java-properties'
+require 'proper_properties'
 
 class Minitest::Spec
 
