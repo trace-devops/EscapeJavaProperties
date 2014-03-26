@@ -1,9 +1,9 @@
 # ProperProperties
 
 [![Build Status](http://img.shields.io/travis/tnarik/proper_properties.svg)](https://travis-ci.org/tnarik/proper_properties)
-[![Code Climate](http://img.shields.io/codeclimate/github/jnbt/java-properties.png)](https://codeclimate.com/github/jnbt/java-properties)
+[![Code Climate](http://img.shields.io/codeclimate/github/tnarik/proper_properties.svg)](https://codeclimate.com/github/tnarik/proper_properties)
 [![Coveralls](http://img.shields.io/coveralls/tnarik/proper_properties.svg)](https://coveralls.io/r/tnarik/proper_properties)
-[![RubyGems](http://img.shields.io/gem/v/java-properties.png)](http://rubygems.org/gems/java-properties)
+[![RubyGems](http://img.shields.io/gem/v/proper_properties.svg)](http://rubygems.org/gems/proper_properties)
 [![Gemnasium](http://img.shields.io/gemnasium/jnbt/java-properties.png)](https://gemnasium.com/jnbt/java-properties)
 [![Inline docs](http://inch-pages.github.io/github/jnbt/java-properties.png)](http://inch-pages.github.io/github/jnbt/java-properties)
 
