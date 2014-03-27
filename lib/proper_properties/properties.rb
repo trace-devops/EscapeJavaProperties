@@ -1,6 +1,6 @@
 module ProperProperties
   # Simple representation of a properties file content
-  # by a simple ruby hash object
+  # by an extension of a Hash object a la ActiveSupport::HashWithIndifferentAccess, with underlying symbol keys
   class Properties < Hash
 
     # Assigns a new value to the hash:
