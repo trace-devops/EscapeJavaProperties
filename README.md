@@ -1,3 +1,5 @@
+[properties_documentation]: http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.Reader)
+
 # ProperProperties
 
 [![Build Status](http://img.shields.io/travis/tnarik/proper_properties.svg)](https://travis-ci.org/tnarik/proper_properties)
@@ -6,7 +8,7 @@
 [![RubyGems](http://img.shields.io/gem/v/proper_properties.svg)](http://rubygems.org/gems/proper_properties)
 [![Gemnasium](http://img.shields.io/gemnasium/tnarik/proper_properties.svg)](https://gemnasium.com/tnarik/proper_properties)
 
-A ruby library to read and write [Java properties files](http://en.wikipedia.org/wiki/.properties), which format is better describe [in the Java documentation](http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.Reader\)).
+A ruby library to read and write [Java properties files](http://en.wikipedia.org/wiki/.properties), which format is better describe [in the Java documentation][properties_documentation].
 
 ## Installation
 
@@ -97,7 +99,7 @@ In the opposite direction line breaks will be correctly escaped but the generato
 
 ## References
 
-For a proper description about the properties file format have a look at the [Java Plattform documentation](http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.Reader\)).
+For a proper description about the properties file format have a look at the [Java Plattform documentation][properties_documentation].
 
 ## License
 
