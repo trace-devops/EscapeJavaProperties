@@ -4,11 +4,11 @@
 
 [![Build Status](http://img.shields.io/travis/tnarik/proper_properties.svg)](https://travis-ci.org/tnarik/proper_properties)
 [![Code Climate](http://img.shields.io/codeclimate/github/tnarik/proper_properties.svg)](https://codeclimate.com/github/tnarik/proper_properties)
-[![Coveralls](http://img.shields.io/coveralls/tnarik/proper_properties.svg)](https://coveralls.io/r/tnarik/proper_properties)
+[![Coveralls](https://coveralls.io/repos/tnarik/proper_properties/badge.png)](https://coveralls.io/r/tnarik/proper_properties)<!---http://img.shields.io/coveralls/tnarik/proper_properties.svg--->
 [![RubyGems](http://img.shields.io/gem/v/proper_properties.svg)](http://rubygems.org/gems/proper_properties)
 [![Gemnasium](http://img.shields.io/gemnasium/tnarik/proper_properties.svg)](https://gemnasium.com/tnarik/proper_properties)
 
-A ruby library to read and write [Java properties files](http://en.wikipedia.org/wiki/.properties), which format is better describe [in the Java documentation][properties_documentation].
+A ruby library to read and write [Java properties files](http://en.wikipedia.org/wiki/.properties), which format is better described [in the Java documentation][properties_documentation].
 
 ## Installation
 
