@@ -96,7 +96,8 @@ In the opposite direction line breaks will be correctly escaped but the generato
 
 ## Author
 
-- Tnarik Innael (@tnarik)
+- Stuart Stephen (@mrswadge)
+- Tnarik Innael (@tnarik) : forked at [f08b23a1341569f576eb4cf859f59350f58bd1c3](https://github.com/tnarik/proper_properties/commit/f08b23a1341569f576eb4cf859f59350f58bd1c3)
 - Jonas Thiel (@jonasthiel) : [original project](https://github.com/jnbt/java-properties) upto [1f2c4b008d69d0eae1084b1adfdea814e2b29899](https://github.com/tnarik/proper_properties/commit/1f2c4b008d69d0eae1084b1adfdea814e2b29899)
 
 ## References
