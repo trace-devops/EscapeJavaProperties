@@ -1,6 +1,6 @@
 [properties_documentation]: http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.Reader)
 
-# EscapeJavaProperties
+# escape_java_properties
 
 [![RubyGems](http://img.shields.io/gem/v/EscapeJavaProperties.svg)](http://rubygems.org/gems/EscapeJavaProperties)
 
