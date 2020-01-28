@@ -2,7 +2,7 @@ require 'escape_java_properties/encoding/special_chars'
 require 'escape_java_properties/encoding/separators'
 require 'escape_java_properties/encoding/unicode'
 
-module EscapeProperties
+module EscapeJavaProperties
   # Module to encode and decode
   #
   # Usage:
